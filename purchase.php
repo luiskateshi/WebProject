@@ -116,8 +116,8 @@
 							</div>
 							<div class="form-group mb-3">
 								<div class="d-grid gap-2">
-									<button type="submit" class="btn btn-primary rounded-0">Purchase</button>
-									<button type="reset" class="btn btn-default bg-light bg-gradient border rounded-0">Cancel</button>
+									<button type="submit" class="btn btn-primary rounded-2 border-0 " style="background: #8e44ad;">Purchase</button>
+									<button type="reset" class="btn btn-default bg-light bg-gradient border rounded-2">Cancel</button>
 								</div>
 							</div>
 						</form>
