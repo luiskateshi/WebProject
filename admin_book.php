@@ -39,8 +39,8 @@
 						<th>Titulli</th>
 						<th>Autori</th>
 						<th>Imazhi</th>
-						<th>Pershkrimi</th>
-						<th>Cmimi</th>
+						<th>Përshkrimi</th>
+						<th>Çmimi</th>
 						<th>Veprimet</th>
 					</tr>
 					</thead>

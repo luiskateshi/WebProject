@@ -86,7 +86,7 @@
 							<input type="text" name="country" class="form-control rounded-0">
 						</div>
 						<div class="mb-3 d-grid">
-							<input type="submit" name="submit" value="Paguaj" class="btn btn-primary rounded-0">
+							<input type="submit" name="submit" value="Paguaj" class="btn btn-primary rounded-2 border-0" style="background: #8e44ad;" >
 						</div>
 					</form>
 					<p class="fw-light fst-italic"><small class="text-muted">Shtypni paguaj për të konfirmuar blerjen, ose kthehuni mbrapa për te edituar shportën e blerjeve.</small></p>

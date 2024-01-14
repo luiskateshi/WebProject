@@ -45,7 +45,7 @@
 		}
 	}
 ?>
-	<h4 class="fw-bolder text-center">Shto liber te ri</h4>
+	<h4 class="fw-bolder text-center">Shto libër te ri</h4>
 	<center>
         <hr class="bg-warning" style="width: 5em; height: 3px; opacity: 1; background: linear-gradient(to right, #8e44ad, #e74c3c);">
 

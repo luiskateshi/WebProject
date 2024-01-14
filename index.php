@@ -10,7 +10,7 @@
   $row = select4LatestBook($conn);
 ?>
       <!-- Example row of columns -->
-      <div class="lead text-center text-dark fw-bolder h4">Latest books</div>
+      <div class="lead text-center text-dark fw-bolder h4">Librat e fundit</div>
       <center>
           <hr class="bg-warning" style="width: 5em; height: 3px; opacity: 1; background: linear-gradient(to right, #8e44ad, #e74c3c);">
 
