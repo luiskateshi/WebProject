@@ -24,7 +24,7 @@
       <!-- Example row of columns -->
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="books.php" class="text-decoration-none text-muted fw-light">PublBooksishers</a></li>
+          <li class="breadcrumb-item"><a href="books.php" class="text-decoration-none text-muted fw-light">Libraria</a></li>
           <li class="breadcrumb-item active" aria-current="page"><?php echo $row['book_title']; ?></li>
         </ol>
       </nav>
@@ -41,7 +41,7 @@
                 <h4><?= $row['book_title'] ?></h4>
                 <hr>
                   <p><?php echo $row['book_descr']; ?></p>
-                  <h4>Details</h4>
+                  <h4>Përshkrimi</h4>
                   <table class="table">
                     <?php foreach($row as $key => $value){
                       if($key == "book_descr" || $key == "book_image" || $key == "publisherid" || $key == "book_title"){
@@ -58,7 +58,7 @@
                           $key = "Autori";
                           break;
                         case "book_price":
-                          $key = "Cmimi";
+                          $key = "Çmimi";
                           break;
                           case "created_at":
                               $key = "Data e krijimit";
