@@ -13,7 +13,7 @@
 			</div>
       	</footer>
 		<div class="clear-fix py-4"></div>
-    </div> <!-- /container -->
+    </div> 
 
   </body>
 </html>

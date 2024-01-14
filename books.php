@@ -1,14 +1,14 @@
 <?php
   session_start();
   $count = 0;
-  // connecto database
+  // lidhja me databasen
   require_once "./functions/database_functions.php";
   $conn = db_connect();
 
   $query = "SELECT book_isbn, book_image, book_title FROM books";
   $result = mysqli_query($conn, $query);
   if(!$result){
-    echo "Can't retrieve data " . mysqli_error($conn);
+    echo "Nuk mund te marr te dhena!! " . mysqli_error($conn);
     exit;
   }
 

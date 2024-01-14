@@ -1,27 +1,26 @@
 <?php
   session_start();
   $book_isbn = $_GET['bookisbn'];
-  // connecto database
+  // lidhja me databasen
   require_once "./functions/database_functions.php";
   $conn = db_connect();
 
   $query = "SELECT * FROM books WHERE book_isbn = '$book_isbn'";
   $result = mysqli_query($conn, $query);
   if(!$result){
-    echo "Can't retrieve data " . mysqli_error($conn);
+    echo "Nuk mund te marr te dhena!!!" . mysqli_error($conn);
     exit;
   }
 
   $row = mysqli_fetch_assoc($result);
   if(!$row){
-    echo "Empty book";
+    echo "Libri eshte bosh";
     exit;
   }
 
   $title = $row['book_title'];
   require "./template/header.php";
 ?>
-      <!-- Example row of columns -->
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="books.php" class="text-decoration-none text-muted fw-light">Libraria</a></li>
