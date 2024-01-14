@@ -4,7 +4,7 @@
 			<div class="container">
 				<div class="d-flex justify-content-between">
 					<div class="">
-						<a href="https://sourcecodester.com" target="_blank" class="text-decoration-none text-muted fw-bold"> Libraria.al &copy; <?= date('Y') ?> </a>
+						<a href="" class="text-decoration-none text-muted fw-bold"> Libraria.al &copy; <?= date('Y') ?> </a>
 					</div>
 					<div class="">
 						<a href="admin.php" class="text-decoration-none text-dark fw-bolder">Identifikohu si Admin</a>
