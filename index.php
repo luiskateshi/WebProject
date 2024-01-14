@@ -12,7 +12,8 @@
       <!-- Example row of columns -->
       <div class="lead text-center text-dark fw-bolder h4">Latest books</div>
       <center>
-        <hr class="bg-warning" style="width:5em;height:3px;opacity:1">
+          <hr class="bg-warning" style="width: 5em; height: 3px; opacity: 1; background: linear-gradient(to right, #8e44ad, #e74c3c);">
+
       </center>
       <div class="row">
         <?php foreach($row as $book) { ?>

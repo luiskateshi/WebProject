@@ -37,7 +37,7 @@
 		$query = "INSERT INTO books (`book_isbn`, `book_title`, `book_author`, `book_image`, `book_descr`, `book_price`, `publisherid`) VALUES ('" . $isbn . "', '" . $title . "', '" . $author . "', '" . $image . "', '" . $descr . "', '" . $price . "', '" . $publisherid . "')";
 		$result = mysqli_query($conn, $query);
 		if($result){
-			$_SESSION['book_success'] = "New Book has been added successfully";
+			$_SESSION['book_success'] = "Libri i ri u shtua me sukses.";
 			header("Location: admin_book.php");
 		} else {
 			$err =  "Can't add new data " . mysqli_error($conn);
@@ -45,10 +45,11 @@
 		}
 	}
 ?>
-	<h4 class="fw-bolder text-center">Add New Book</h4>
+	<h4 class="fw-bolder text-center">Shto liber te ri</h4>
 	<center>
-	<hr class="bg-warning" style="width:5em;height:3px;opacity:1">
-	</center>
+        <hr class="bg-warning" style="width: 5em; height: 3px; opacity: 1; background: linear-gradient(to right, #8e44ad, #e74c3c);">
+
+    </center>
 	<div class="row justify-content-center">
 		<div class="col-lg-6 col-md-8 col-sm-10 col-xs-12">
 			<div class="card rounded-0 shadow">
@@ -67,42 +68,30 @@
 									<input class="form-control rounded-0" type="text" name="isbn">
 								</div>
 								<div class="mb-3">
-									<label class="control-label">Title</label>
+									<label class="control-label">Titulli</label>
 									<input class="form-control rounded-0" type="text" name="title" required>
 								</div>
 								<div class="mb-3">
-									<label class="control-label">Author</label>
+									<label class="control-label">Autor</label>
 									<input class="form-control rounded-0" type="text" name="author" required>
 								</div>
 							
 								<div class="mb-3">
-									<label class="control-label">Image</label>
+									<label class="control-label">Imazhi</label>
 									<input class="form-control rounded-0" type="file" name="image">
 								</div>
 								<div class="mb-3">
-									<label class="control-label">Description</label>
+									<label class="control-label">Përshkrimi</label>
 									<textarea class="form-control rounded-0" name="descr" cols="40" rows="5"></textarea>
 								</div>
 								<div class="mb-3">
-									<label class="control-label">Price</label>
+									<label class="control-label">Çmimi</label>
 									<input class="form-control rounded-0" type="text" name="price" required>
 								</div>
-								<div class="mb-3">
-									<label class="control-label">Publisher</label>
-									<select class="form-select rounded-0"  name="publisher" required>
-										<option value="" disabled selected>Please Select Here</option>
-										<?php 
-										$psql = mysqli_query($conn, "SELECT * FROM `publisher` order by publisher_name asc");
-										while($row = mysqli_fetch_assoc($psql)):
-										?>
-										<option value="<?= $row['publisherid'] ?>"><?= $row['publisher_name'] ?></option>
-										<?php endwhile; ?>
-									</select>
 
-								</div>
 								<div class="text-center">
-									<button type="submit" name="add"  class="btn btn-primary btn-sm rounded-0">Save</button>
-									<button type="reset" class="btn btn-default btn-sm rounded-0 border">Cancel</button>
+									<button type="submit" name="add"  class="btn btn-primary btn-sm rounded-0">Ruaj</button>
+									<button type="reset" class="btn btn-default btn-sm rounded-0 border">Anullo</button>
 								</div>
 						</form>
 					</div>

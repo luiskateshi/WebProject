@@ -50,8 +50,9 @@
 ?>
 	<h4 class="fw-bolder text-center">Edit Book Details</h4>
 	<center>
-	<hr class="bg-warning" style="width:5em;height:3px;opacity:1">
-	</center>
+        <hr class="bg-warning" style="width: 5em; height: 3px; opacity: 1; background: linear-gradient(to right, #8e44ad, #e74c3c);">
+
+    </center>
 	<div class="row justify-content-center">
 		<div class="col-lg-6 col-md-8 col-sm-10 col-xs-12">
 			<div class="card rounded-0 shadow">

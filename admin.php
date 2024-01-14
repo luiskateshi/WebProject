@@ -10,7 +10,7 @@ if(isset($_SESSION['admin']) && $_SESSION['admin'] == true){
 	<div class="col-lg-4 col-md-6 col-sm-10 col-xs-12">
 		<div class="card rounded-0 shadow">
 			<div class="card-header">
-				<div class="card-title text-center h4 fw-bolder">Login</div>
+				<div class="card-title text-center h4 fw-bolder">Identifikohu:</div>
 			</div>
 			<div class="card-body">
 				<div class="container-fluid">
@@ -24,15 +24,16 @@ if(isset($_SESSION['admin']) && $_SESSION['admin'] == true){
 					?>
 					<form class="form-horizontal" method="post" action="admin_verify.php">
 						<div class="mb-3">
-							<label for="name" class="control-label ">Username</label>
+							<label for="name" class="control-label ">Emri i Perdoruesit</label>
 							<input type="text" name="name" class="form-control rounded-0">
 						</div>
 						<div class="mb-3">
-							<label for="pass" class="control-label ">Password</label>
+							<label for="pass" class="control-label ">Fjalekalimi</label>
 							<input type="password" name="pass" class="form-control rounded-0">
 						</div>
 						<div class="mb-3 d-grid">
-							<input type="submit" name="submit" class="btn btn-primary rounded-0">
+
+							<input type="submit" value="Hyr" name="submit" class="btn btn-primary rounded-0">
 						</div>
 					</form>
 				</div>

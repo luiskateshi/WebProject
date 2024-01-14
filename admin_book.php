@@ -9,8 +9,9 @@
 ?>
 	<h4 class="fw-bolder text-center">Book List</h4>
 	<center>
-	<hr class="bg-warning" style="width:5em;height:3px;opacity:1">
-	</center>
+        <hr class="bg-warning" style="width: 5em; height: 3px; opacity: 1; background: linear-gradient(to right, #8e44ad, #e74c3c);">
+
+    </center>
 	<?php if(isset($_SESSION['book_success'])): ?>
 		<div class="alert alert-success rounded-0">
 			<?= $_SESSION['book_success'] ?>
@@ -57,8 +58,8 @@
 						<td class="px-2 py-1 align-middle"><?php echo getPubName($conn, $row['publisherid']); ?></td>
 						<td class="px-2 py-1 align-middle text-center">
 							<div class="btn-group btn-group-sm">
-								<a href="admin_edit.php?bookisbn=<?php echo $row['book_isbn']; ?>" class="btn btn-sm rounded-0 btn-primary" title="Edit"><i class="fa fa-edit"></i></a>
-								<a href="admin_delete.php?bookisbn=<?php echo $row['book_isbn']; ?>" class="btn btn-sm rounded-0 btn-danger" title="Delete" onclick="if(confirm('Are you sure to delete this book?') === false) event.preventDefault()"><i class="fa fa-trash"></i></a>
+								<a href="admin_edit.php?bookisbn=<?php echo $row['book_isbn']; ?>" class="btn btn-sm rounded-0 btn-primary" title="Edit" style="background: #8e44ad;"><i class="fa fa-edit"></i></a>
+								<a href="admin_delete.php?bookisbn=<?php echo $row['book_isbn']; ?>" class="btn btn-sm rounded-0 btn-danger" title="Delete" style="background: #e74c3c;" onclick="if(confirm('Are you sure to delete this book?') === false) event.preventDefault()"><i class="fa fa-trash"></i></a>
 							</div>
 						</td>
 					</tr>

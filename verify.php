@@ -2,9 +2,9 @@
 	$email = $_POST['inputEmail'];
 	$pswd = $_POST['inputPasswd'];
 
-	$conn = mysqli_connect("localhost", "root", "", "obs_db");
+	$conn = mysqli_connect("localhost:3306", "root", "", "obs_db");
 	if(!$conn){
-		echo "Cannot connecto to database " . mysqli_connect_error($conn);
+		echo "Cannot connect to database " . mysqli_connect_error($conn);
 		exit;
 	}
 
