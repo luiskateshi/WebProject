@@ -21,9 +21,6 @@
 		
 		$price = floatval(trim($_POST['price']));
 		$price = mysqli_real_escape_string($conn, $price);
-		
-		$publisher = trim($_POST['publisher']);
-		$publisherid = mysqli_real_escape_string($conn, $publisher);
 
 		// add image
 		if(isset($_FILES['image']) && $_FILES['image']['name'] != ""){
@@ -34,7 +31,7 @@
 			move_uploaded_file($_FILES['image']['tmp_name'], $uploadDirectory);
 		}
 
-		$query = "INSERT INTO books (`book_isbn`, `book_title`, `book_author`, `book_image`, `book_descr`, `book_price`, `publisherid`) VALUES ('" . $isbn . "', '" . $title . "', '" . $author . "', '" . $image . "', '" . $descr . "', '" . $price . "', '" . $publisherid . "')";
+		$query = "INSERT INTO books (`book_isbn`, `book_title`, `book_author`, `book_image`, `book_descr`, `book_price`) VALUES ('" . $isbn . "', '" . $title . "', '" . $author . "', '" . $image . "', '" . $descr . "', '" . $price . "')";
 		$result = mysqli_query($conn, $query);
 		if($result){
 			$_SESSION['book_success'] = "Libri i ri u shtua me sukses.";

@@ -1,6 +1,6 @@
 <?php
 	function db_connect(){
-		$conn = mysqli_connect("localhost", "root", "", "obs_db");
+		$conn = mysqli_connect("localhost:3306", "root", "", "obs_db");
 		if(!$conn){
 			echo "Can't connect database " . mysqli_connect_error($conn);
 			exit;
@@ -95,22 +95,6 @@
 		}
 		$customerid = mysqli_insert_id($conn);
 		return $customerid;
-	}
-
-	function getPubName($conn, $pubid){
-		$query = "SELECT publisher_name FROM publisher WHERE publisherid = '$pubid'";
-		$result = mysqli_query($conn, $query);
-		if(!$result){
-			echo "Can't retrieve data " . mysqli_error($conn);
-			exit;
-		}
-		if(mysqli_num_rows($result) == 0){
-			echo "Empty books ! Something wrong! check again";
-			exit;
-		}
-
-		$row = mysqli_fetch_assoc($result);
-		return $row['publisher_name'];
 	}
 
 	function getAll($conn){

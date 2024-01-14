@@ -43,7 +43,7 @@
                   <h4>Përshkrimi</h4>
                   <table class="table">
                     <?php foreach($row as $key => $value){
-                      if($key == "book_descr" || $key == "book_image" || $key == "publisherid" || $key == "book_title"){
+                      if($key == "book_descr" || $key == "book_image" || $key == "book_title"){
                         continue;
                       }
                       switch($key){

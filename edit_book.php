@@ -10,7 +10,6 @@
 	$author = trim($_POST['author']);
 	$descr = trim($_POST['descr']);
 	$price = floatval(trim($_POST['price']));
-	$publisher = trim($_POST['publisher']);
 
 	if(isset($_FILES['image']) && $_FILES['image']['name'] != ""){
 		$image = $_FILES['image']['name'];
