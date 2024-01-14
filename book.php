@@ -52,14 +52,17 @@
                           $key = "ISBN";
                           break;
                         case "book_title":
-                          $key = "Title";
+                          $key = "Titulli";
                           break;
                         case "book_author":
-                          $key = "Author";
+                          $key = "Autori";
                           break;
                         case "book_price":
-                          $key = "Price";
+                          $key = "Cmimi";
                           break;
+                          case "created_at":
+                              $key = "Data e krijimit";
+                              break;
                       }
                     ?>
                     <tr>
@@ -74,7 +77,7 @@
                   <form method="post" action="cart.php">
                     <input type="hidden" name="bookisbn" value="<?php echo $book_isbn;?>">
                     <div class="text-center">
-                      <input type="submit" value="Purchase / Add to cart" name="cart" class="btn btn-primary rounded-0">
+                      <input type="submit" value="Shto ne shporte" name="cart" class="btn btn-primary rounded-0">
                     </div>
                   </form>
               </div>

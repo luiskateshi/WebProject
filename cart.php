@@ -13,24 +13,25 @@
 	require_once "./functions/database_functions.php";
 	require_once "./functions/cart_functions.php";
 
-	// book_isbn got from form post method, change this place later.
+	//book.php ben Post vleren e bookisbn
 	if(isset($_POST['bookisbn'])){
 		$book_isbn = $_POST['bookisbn'];
 	}
 
 	if(isset($book_isbn)){
-		// new iem selected
+		//Libri i pare qe po shtohet ne shporte (behet inicializimi i Session)
 		if(!isset($_SESSION['cart'])){
-			// $_SESSION['cart'] is associative array that bookisbn => qty
 			$_SESSION['cart'] = array();
 
 			$_SESSION['total_items'] = 0;
 			$_SESSION['total_price'] = '0.00';
 		}
 
+
 		if(!isset($_SESSION['cart'][$book_isbn])){
 			$_SESSION['cart'][$book_isbn] = 1;
 		} elseif(isset($_POST['cart'])){
+            //key => value++
 			$_SESSION['cart'][$book_isbn]++;
 			unset($_POST);
 		}
@@ -51,7 +52,7 @@
 	$title = "Your shopping cart";
 	require "./template/header.php";
 ?>
-	<h4 class="fw-bolder text-center">Cart List</h4>
+	<h4 class="fw-bolder text-center">Shporta ime</h4>
       <center>
           <hr class="bg-warning" style="width: 5em; height: 3px; opacity: 1; background: linear-gradient(to right, #8e44ad, #e74c3c);">
 
@@ -62,15 +63,16 @@
 		$_SESSION['total_items'] = total_items($_SESSION['cart']);
 ?>
 	<div class="card rounded-0 shadow">
+
 		<div class="card-body">
 			<div class="container-fluid">
 				<form action="cart.php" method="post" id="cart-form">
 					<table class="table">
 						<tr>
-							<th>Item</th>
-							<th>Price</th>
-							<th>Quantity</th>
-							<th>Total</th>
+							<th>Produkti</th>
+							<th>Çmimi</th>
+							<th>Sasia</th>
+							<th>Shuma</th>
 						</tr>
 						<?php
 							foreach($_SESSION['cart'] as $isbn => $qty){
@@ -95,9 +97,9 @@
 			</div>
 		</div>
 		<div class="card-footer text-end">
-			<input type="submit" class="btn btn-primary rounded-0" name="save_change" value="Save Changes" form="cart-form">
-			<a href="checkout.php" class="btn btn-dark rounded-0">Go To Checkout</a> 
-			<a href="books.php" class="btn btn-warning rounded-0">Continue Shopping</a>
+			<input type="submit" class="btn btn-primary rounded-0" name="save_change" value="Ruaj" form="cart-form">
+			<a href="checkout.php" class="btn btn-dark rounded-0">Kryej blerjen</a>
+			<a href="books.php" class="btn btn-warning rounded-0">Shiko produkte te tjera</a>
 
 		</div>
 	</div>
@@ -105,7 +107,7 @@
 <?php
 	} else {
 		?>
-<div class="alert alert-warning rounded-0">Your cart is empty! Please add atleast 1 book to purchase first.</div>
+<div class="alert alert-warning rounded-0">Shporta juaj eshte bosh! Shtoni te pakten nje liber per te bere nje blerje.</div>
 <?php
 
 	}
