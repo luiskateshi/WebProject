@@ -107,7 +107,7 @@
 <?php
 	} else {
 		?>
-<div class="alert alert-warning rounded-0">Shporta juaj eshte bosh! Shtoni te pakten nje liber per te bere nje blerje.</div>
+<div class="alert alert-warning rounded-0">Shporta juaj është bosh! Shtoni të paktën një libër.</div>
 <?php
 
 	}

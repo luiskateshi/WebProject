@@ -54,7 +54,7 @@
 
 	session_unset();
 ?>
-	<div class="alert alert-success rounded-0 my-4">Your order has been processed sucessfully. We'll be reaching you out to confirm your order. Thanks!</div>
+	<div class="alert alert-success rounded-0 my-4">Blerja juaj u krye me sukses. Ju faleminderit :)</div>
 
 <?php
 	if(isset($conn)){
