@@ -51,9 +51,9 @@
 						?>
 					<tr>
 						<td><?php echo $book['book_title'] . " nga " . $book['book_author']; ?></td>
-						<td><?php echo "$" . $book['book_price']; ?></td>
+						<td><?php echo "ALL " . $book['book_price']; ?></td>
 						<td><?php echo $qty; ?></td>
-						<td><?php echo "$" . $qty * $book['book_price']; ?></td>
+						<td><?php echo "ALL " . $qty * $book['book_price']; ?></td>
 					</tr>
 					<?php } ?>
 					<tr>
