@@ -77,7 +77,7 @@
                   <form method="post" action="cart.php">
                     <input type="hidden" name="bookisbn" value="<?php echo $book_isbn;?>">
                     <div class="text-center">
-                      <input type="submit" value="Shto ne shporte" name="cart" class="btn btn-primary rounded-0">
+                      <input type="submit" value="Shto ne shporte" name="cart" class="btn btn-primary rounded-2 border-0" style="background: #8e44ad;">
                     </div>
                   </form>
               </div>

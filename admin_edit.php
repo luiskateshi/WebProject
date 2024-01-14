@@ -88,8 +88,8 @@
 								</div>
 
 								<div class="text-center">
-									<button type="submit" name="edit"  class="btn btn-primary btn-sm rounded-0">Perditeso</button>
-									<button type="reset" class="btn btn-default btn-sm rounded-0 border">Anullo</button>
+									<button type="submit" name="edit"  class="btn btn-primary btn-sm rounded-2 border-0" style="background: #8e44ad;">Perditeso</button>
+									<button type="reset" class="btn btn-default btn-sm rounded-2 border">Anullo</button>
 								</div>
 						</form>
 					</div>

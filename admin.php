@@ -25,15 +25,15 @@ if(isset($_SESSION['admin']) && $_SESSION['admin'] == true){
 					<form class="form-horizontal" method="post" action="admin_verify.php">
 						<div class="mb-3">
 							<label for="name" class="control-label ">Emri i Perdoruesit</label>
-							<input type="text" name="name" class="form-control rounded-0">
+							<input type="text" name="name" class="form-control rounded-2">
 						</div>
 						<div class="mb-3">
 							<label for="pass" class="control-label ">Fjalekalimi</label>
-							<input type="password" name="pass" class="form-control rounded-0">
+							<input type="password" name="pass" class="form-control rounded-2">
 						</div>
 						<div class="mb-3 d-grid">
 
-							<input type="submit" value="Hyr" name="submit" class="btn btn-primary rounded-0">
+							<input type="submit" value="Hyr" name="submit" style="background: #8e44ad;" class="btn btn-primary rounded-1.5 border-0">
 						</div>
 					</form>
 				</div>

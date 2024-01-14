@@ -97,9 +97,9 @@
 			</div>
 		</div>
 		<div class="card-footer text-end">
-			<input type="submit" class="btn btn-primary rounded-0" name="save_change" value="Ruaj" form="cart-form">
-			<a href="checkout.php" class="btn btn-dark rounded-0">Kryej blerjen</a>
-			<a href="books.php" class="btn btn-warning rounded-0">Shiko produkte te tjera</a>
+			<input type="submit" class="btn btn-primary rounded-1.5 border-0" style="background: #8e44ad;" name="save_change" value="Ruaj" form="cart-form">
+			<a href="checkout.php" class="btn btn-dark rounded-1.5 border-0" >Kryej blerjen</a>
+			<a href="books.php" class="btn btn-dark rounded-1.5 border-0" style="background: #e74c3c;">Shiko produkte te tjera</a>
 
 		</div>
 	</div>

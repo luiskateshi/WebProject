@@ -90,8 +90,8 @@
 								</div>
 
 								<div class="text-center">
-									<button type="submit" name="add"  class="btn btn-primary btn-sm rounded-0">Ruaj</button>
-									<button type="reset" class="btn btn-default btn-sm rounded-0 border">Anullo</button>
+									<button type="submit" name="add"  class="btn btn-primary btn-sm rounded-1.5 border-0" style="background: #e74c3c;">Ruaj</button>
+									<button type="reset" class="btn btn-default btn-sm rounded-1.5 border">Anullo</button>
 								</div>
 						</form>
 					</div>

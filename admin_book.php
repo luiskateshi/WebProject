@@ -55,8 +55,8 @@
 						<td class="px-2 py-1 align-middle"><?php echo $row['book_price']; ?></td>
 						<td class="px-2 py-1 align-middle text-center">
 							<div class="btn-group btn-group-sm">
-								<a href="admin_edit.php?bookisbn=<?php echo $row['book_isbn']; ?>" class="btn btn-sm rounded-0 btn-primary" title="Edit" style="background: #8e44ad;"><i class="fa fa-edit"></i></a>
-								<a href="admin_delete.php?bookisbn=<?php echo $row['book_isbn']; ?>" class="btn btn-sm rounded-0 btn-danger" title="Delete" style="background: #e74c3c;" onclick="if(confirm('Are you sure to delete this book?') === false) event.preventDefault()"><i class="fa fa-trash"></i></a>
+								<a href="admin_edit.php?bookisbn=<?php echo $row['book_isbn']; ?>" class="btn btn-sm rounded-1.5 btn-primary border-0" title="Edit" style="background: #8e44ad;"><i class="fa fa-edit"></i></a>
+								<a href="admin_delete.php?bookisbn=<?php echo $row['book_isbn']; ?>" class="btn btn-sm rounded-1.5 btn-danger border-0" title="Delete" style="background: #e74c3c;" onclick="if(confirm('Are you sure to delete this book?') === false) event.preventDefault()"><i class="fa fa-trash"></i></a>
 							</div>
 						</td>
 					</tr>
