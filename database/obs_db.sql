@@ -1,7 +1,7 @@
 -- phpMyAdmin SQL Dump
 -- version 5.1.3
 -- https://www.phpmyadmin.net/
---
+USE obs_db
 -- Host: 127.0.0.1
 -- Generation Time: Jun 21, 2022 at 10:46 AM
 -- Server version: 10.4.24-MariaDB
