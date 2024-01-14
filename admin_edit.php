@@ -48,7 +48,7 @@
 		}
 	}
 ?>
-	<h4 class="fw-bolder text-center">Edit Book Details</h4>
+	<h4 class="fw-bolder text-center">NDRYSHO DETAJET E LIBRIT</h4>
 	<center>
         <hr class="bg-warning" style="width: 5em; height: 3px; opacity: 1; background: linear-gradient(to right, #8e44ad, #e74c3c);">
 
@@ -71,36 +71,25 @@
 									<input class="form-control rounded-0" type="text" name="isbn" value="<?php echo $row['book_isbn'];?>" readOnly="true">
 								</div>
 								<div class="mb-3">
-									<label class="control-label">Title</label>
+									<label class="control-label">Titulli</label>
 									<input class="form-control rounded-0" type="text" name="book_title" value="<?php echo $row['book_title'];?>" required>
 								</div>
 								<div class="mb-3">
-									<label class="control-label">Author</label>
+									<label class="control-label">Autori</label>
 									<input class="form-control rounded-0" type="text" name="book_author" value="<?php echo $row['book_author'];?>" required>
 								</div>
 								<div class="mb-3">
-									<label class="control-label">Description</label>
+									<label class="control-label">Pershkrimi</label>
 									<textarea class="form-control rounded-0" name="book_descr" cols="40" rows="5"><?php echo $row['book_descr'];?></textarea>
 								</div>
 								<div class="mb-3">
-									<label class="control-label">Price</label>
+									<label class="control-label">Cmimi</label>
 									<input class="form-control rounded-0" type="text" name="book_price" value="<?php echo $row['book_price'];?>" required>
 								</div>
-								<div class="mb-3">
-									<label class="control-label">Publisher</label>
-									<select class="form-select rounded-0"  name="publisherid" required>
-										<?php 
-										$psql = mysqli_query($conn, "SELECT * FROM `publisher` order by publisher_name asc");
-										while($row = mysqli_fetch_assoc($psql)):
-										?>
-										<option value="<?= $row['publisherid'] ?>" <?= $row['publisherid']==$row['publisherid'] ? 'selected' : '' ?>><?= $row['publisher_name'] ?></option>
-										<?php endwhile; ?>
-									</select>
 
-								</div>
 								<div class="text-center">
-									<button type="submit" name="edit"  class="btn btn-primary btn-sm rounded-0">Update</button>
-									<button type="reset" class="btn btn-default btn-sm rounded-0 border">Cancel</button>
+									<button type="submit" name="edit"  class="btn btn-primary btn-sm rounded-0">Perditeso</button>
+									<button type="reset" class="btn btn-default btn-sm rounded-0 border">Anullo</button>
 								</div>
 						</form>
 					</div>

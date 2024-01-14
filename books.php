@@ -15,7 +15,7 @@
   $title = "List of Books";
   require_once "./template/header.php";
 ?>
-  <p class="lead text-center text-muted">List of All Books</p>
+  <p class="lead text-center text-muted">LISTA E TE GJITHË LIBRAVE</p>
     <?php for($i = 0; $i < mysqli_num_rows($result); $i++){ ?>
       <div class="row">
         <?php while($book = mysqli_fetch_assoc($result)){ ?>

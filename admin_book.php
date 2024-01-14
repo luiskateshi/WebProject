@@ -7,7 +7,7 @@
 	$conn = db_connect();
 	$result = getAll($conn);
 ?>
-	<h4 class="fw-bolder text-center">Book List</h4>
+	<h4 class="fw-bolder text-center">Lista librave</h4>
 	<center>
         <hr class="bg-warning" style="width: 5em; height: 3px; opacity: 1; background: linear-gradient(to right, #8e44ad, #e74c3c);">
 
@@ -32,18 +32,16 @@
 					<col width="15%">
 					<col width="10%">
 					<col width="15%">
-					<col width="10%">
 				</colgroup>
 					<thead>
 					<tr>
 						<th>ISBN</th>
-						<th>Title</th>
-						<th>Author</th>
-						<th>Image</th>
-						<th>Description</th>
-						<th>Price</th>
-						<th>Publisher</th>
-						<th>Action</th>
+						<th>Titulli</th>
+						<th>Autori</th>
+						<th>Imazhi</th>
+						<th>Pershkrimi</th>
+						<th>Cmimi</th>
+						<th>Veprimet</th>
 					</tr>
 					</thead>
 					<tbody>
@@ -55,7 +53,6 @@
 						<td class="px-2 py-1 align-middle"><?php echo $row['book_image']; ?></td>
 						<td class="px-2 py-1 align-middle"><p class="text-truncate" style="width:15em"><?php echo $row['book_descr']; ?></p></td>
 						<td class="px-2 py-1 align-middle"><?php echo $row['book_price']; ?></td>
-						<td class="px-2 py-1 align-middle"><?php echo getPubName($conn, $row['publisherid']); ?></td>
 						<td class="px-2 py-1 align-middle text-center">
 							<div class="btn-group btn-group-sm">
 								<a href="admin_edit.php?bookisbn=<?php echo $row['book_isbn']; ?>" class="btn btn-sm rounded-0 btn-primary" title="Edit" style="background: #8e44ad;"><i class="fa fa-edit"></i></a>
