@@ -1,14 +1,5 @@
 <?php
-	// the shopping cart needs sessions, to start one
-	/*
-		Array of session(
-			cart => array (
-				book_isbn (get from $_POST['book_isbn']) => number of books
-			),
-			items => 0,
-			total_price => '0.00'
-		)
-	*/
+
 	session_start();
 	require_once "./functions/database_functions.php";
 	require_once "./functions/cart_functions.php";

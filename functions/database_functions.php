@@ -1,6 +1,6 @@
 <?php
 	function db_connect(){
-		$conn = mysqli_connect("localhost:3306", "root", "", "obs_db");
+		$conn = mysqli_connect("localhost", "root", "", "obs_db");
 		if(!$conn){
 			echo "Can't connect database " . mysqli_connect_error($conn);
 			exit;
